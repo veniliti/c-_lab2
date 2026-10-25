@@ -1,0 +1,74 @@
+Variant 1: all_of
+Hardware concurrency = 12
+
+Data size N = 100000
+Library all_of:
+  no policy took 2.7e-05 seconds
+  seq       took 0.0001238 seconds
+  par       took 0.0002235 seconds
+  unseq     took 0.0001761 seconds
+  par_unseq took 0.0001037 seconds
+Custom parallel all_of:
+  K = 1 took 0.0006937 seconds
+  K = 2 took 0.0002432 seconds
+  K = 4 took 0.0002312 seconds
+  K = 8 took 0.0003933 seconds
+  K = 16 took 0.0006823 seconds
+  K = 32 took 0.0011349 seconds
+  K = 64 took 0.0025142 seconds
+Best K is 4, it took 0.0002312 seconds
+Hardware concurrency = 12
+
+Data size N = 1000000
+Library all_of:
+  no policy took 0.0004532 seconds
+  seq       took 0.0012301 seconds
+  par       took 0.0004308 seconds
+  unseq     took 0.001643 seconds
+  par_unseq took 0.0003455 seconds
+Custom parallel all_of:
+  K = 1 took 0.0004774 seconds
+  K = 2 took 0.0003331 seconds
+  K = 4 took 0.0003339 seconds
+  K = 8 took 0.0003732 seconds
+  K = 16 took 0.0006712 seconds
+  K = 32 took 0.0012313 seconds
+  K = 64 took 0.0022964 seconds
+Best K is 2, it took 0.0003331 seconds
+Hardware concurrency = 12
+
+Data size N = 10000000
+Library all_of:
+  no policy took 0.0029407 seconds
+  seq       took 0.0123401 seconds
+  par       took 0.0017654 seconds
+  unseq     took 0.0123237 seconds
+  par_unseq took 0.0016701 seconds
+Custom parallel all_of:
+  K = 1 took 0.003152 seconds
+  K = 2 took 0.0029473 seconds
+  K = 4 took 0.0019027 seconds
+  K = 8 took 0.0018085 seconds
+  K = 16 took 0.0016317 seconds
+  K = 32 took 0.0018357 seconds
+  K = 64 took 0.0032706 seconds
+Best K is 16, it took 0.0016317 seconds
+Hardware concurrency = 12
+
+Data size N = 100000000
+Library all_of:
+  no policy took 0.0101528 seconds
+  seq       took 0.0337271 seconds
+  par       took 0.004089 seconds
+  unseq     took 0.0332603 seconds
+  par_unseq took 0.0040568 seconds
+Custom parallel all_of:
+  K = 1 took 0.0091212 seconds
+  K = 2 took 0.0084271 seconds
+  K = 4 took 0.0081603 seconds
+  K = 8 took 0.006994 seconds
+  K = 16 took 0.0041016 seconds
+  K = 32 took 0.0040818 seconds
+  K = 64 took 0.0054129 seconds
+Best K is 32, it took 0.0040818 seconds
+Hardware concurrency = 12
